@@ -1,0 +1,9 @@
+$breakpoint-medium: 768px;
+
+body {
+    padding-top: 48px;
+
+    @media screen and (min-width: $breakpoint-medium) {
+        padding-top: 66px;
+    }
+}
