@@ -2,17 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
-
-const CheckIconYellow = () => {
-  return (
-    <FontAwesomeIcon
-      icon={faCheck}
-      className="fa-fw text-main-yellow text-sm"
-    />
-  );
-};
+import CheckYellowIcon from "../icons/CheckYellowIcon.js";
 
 const PackageCard = ({
   title,
@@ -37,7 +27,7 @@ const PackageCard = ({
         {bodyList.map((item, index) => (
           <div key={index} className="justify-content-start d-flex px-2 py-1">
             <div>
-              <CheckIconYellow />
+              <CheckYellowIcon />
             </div>
             <div className="ps-2">
               <small>{item}</small>
