@@ -1,0 +1,14 @@
+@import "./var.scss";
+
+body {
+    background-color: #f5f5f5;
+    padding-top: 48px;
+
+    @media screen and (min-width: $breakpoint-medium) {
+        padding-top: 66px;
+    }
+}
+
+.text-main-yellow {
+    color: $color-main-yellow;
+}

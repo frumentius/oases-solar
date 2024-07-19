@@ -1,0 +1,10 @@
+@import "../../../styles/var.scss";
+
+svg.text-main {
+    .color-background {
+        fill: $color-main-blue;
+    }
+    .color-foreground {
+        fill: $color-main-yellow;
+    }
+}

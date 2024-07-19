@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './scss/soft-design-system.scss';
+
 import App from './App';
+
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+
+import './styles/bootstrap-theme/soft-design-system.scss';
+import './styles/global.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
