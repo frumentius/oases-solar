@@ -1,4 +1,4 @@
-$breakpoint-medium: 768px;
+@import "./var.scss";
 
 body {
     padding-top: 48px;
@@ -6,4 +6,8 @@ body {
     @media screen and (min-width: $breakpoint-medium) {
         padding-top: 66px;
     }
+}
+
+.text-main-yellow {
+    color: $color-main-yellow;
 }

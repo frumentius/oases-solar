@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import { Col, Container, Navbar, Row } from "react-bootstrap";
 
 import "./NavBarSm.scss";
-import DocsSVG from "../SVG/DocsSVG";
-import ShopSVG from "../SVG/ShopSVG";
-import CsSVG from "../SVG/CsSVG";
+import DocsSVG from "../svg/DocsSVG";
+import ShopSVG from "../svg/ShopSVG";
+import CsSVG from "../svg/CsSVG";
 
 const NavBarSm = () => {
   return (
