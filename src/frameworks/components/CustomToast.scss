@@ -1,0 +1,25 @@
+@import "../../styles/var.scss";
+
+.custom-toast {
+    width: 100% !important;
+
+    .toast {
+        margin: 0 auto;
+    }
+}
+
+.custom-toast-top {
+    top: 48px;
+
+    @media screen and (min-width: $breakpoint-medium) {
+        top: 66px;
+    }
+}
+
+.custom-toast-bottom {
+    bottom: 55px;
+
+    @media screen and (min-width: $breakpoint-medium) {
+        bottom: 0;
+    }
+}
