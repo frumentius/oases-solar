@@ -1,8 +1,28 @@
 import React from "react";
 
-import { Button, Toast } from "react-bootstrap";
+import { Toast } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 import "./CustomToast.scss";
+
+const CloseButton = ({ variant, closeToast }) => {
+  return (
+    <div
+      type="button"
+      className={"me-2 m-auto text-bg-" + variant}
+      data-bs-dismiss="toast"
+      aria-label="Close"
+      onClick={closeToast}
+    >
+      <FontAwesomeIcon
+        icon={faXmark}
+        className="fa-fw text-sm"
+      />
+      {/* <span aria-hidden="true">&times;</span> */}
+    </div>
+  );
+};
 
 const CustomToast = ({
   variant = "light",
@@ -21,7 +41,7 @@ const CustomToast = ({
       }
     >
       <Toast
-        className={"border-0 text-bg-" + variant}
+        className={"border-0 text-bg-" + variant + " bg-gradient-" + variant}
         onClose={closeToast}
         show={is_show}
         autohide={autohide}
@@ -29,15 +49,7 @@ const CustomToast = ({
         <div class="d-flex">
           <Toast.Body>{children}</Toast.Body>
           {!autohide && (
-            <Button
-              variant="close"
-              className="me-2 m-auto"
-              data-bs-dismiss="toast"
-              aria-label="Close"
-              onClick={closeToast}
-            >
-              <span aria-hidden="true">&times;</span>
-            </Button>
+            <CloseButton variant={variant} closeToast={closeToast} />
           )}
         </div>
       </Toast>

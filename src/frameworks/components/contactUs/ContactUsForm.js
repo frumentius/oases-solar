@@ -46,6 +46,7 @@ const ContactUsForm = () => {
             res.json().then((resData) => {
               setToast({
                 variant: "danger",
+                autohide: false,
                 is_show: true,
                 body: resData.message,
               });
@@ -55,6 +56,7 @@ const ContactUsForm = () => {
         .catch(() => {
           setToast({
             variant: "danger",
+            autohide: false,
             is_show: true,
             body: "Something wrong please try again later.",
           });

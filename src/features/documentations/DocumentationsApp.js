@@ -3,10 +3,10 @@ import React from "react";
 import PageMainCard from "../../frameworks/components/PageMainCard.js";
 import PDFRedIcon from "../../frameworks/components/icons//PDFRedIcon.js";
 
-const Download = ({ title, fileSrc }) => {
+const Download = ({ title, fileSrc, isTop = false }) => {
   return (
     <>
-      <h6 className="mt-5">{title}</h6>
+      <h6 className={!isTop ? "mt-5" : ""}>{title}</h6>
       <div className="justify-content-start d-flex">
         <div>
           <PDFRedIcon />
@@ -33,10 +33,11 @@ const DocumentationsApp = () => {
       title="Documentations"
       subTitle="Download"
     >
-      <div className="p-3 p-lg-5 pt-0 card-body">
+      <div className="p-3 p-lg-5 pt-0">
         <Download
           title="Solar Energy Potential"
           fileSrc="/assets/pdf/solar-energy-potential-docs.pdf"
+          isTop={true}
         />
         <Download
           title="PV-design off-grid SCC"

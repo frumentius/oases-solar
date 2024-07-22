@@ -8,6 +8,7 @@ import FinancialAnalysisProApp from "./features/comingSoon/FinancialAnalysisProA
 import TermsConditions from "./features/legalDocuments/TermsConditions.js";
 import Disclaimer from "./features/legalDocuments/Disclaimer.js";
 import PrivacyPolicies from "./features/legalDocuments/PrivacyPolicies.js";
+import SolarEnergyPotentialApp from "./features/solarEnergyPotential/SolarEnergyPotentialApp.js";
 
 const AppRouter = () => {
   return (
@@ -16,6 +17,12 @@ const AppRouter = () => {
         <Route index element={<HomeApp />} />
         <Route path="documentations" element={<DocumentationsApp />} />
         <Route path="contact-us" element={<ContactUsApp />} />
+        <Route path="app">
+          <Route
+            path="solar-energy-potential"
+            element={<SolarEnergyPotentialApp />}
+          />
+        </Route>
         <Route path="coming-soon">
           <Route
             path="financial-analysis-pro"
