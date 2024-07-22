@@ -1,4 +1,7 @@
 import React from "react";
+import { Helmet } from "react-helmet";
+
+import * as CONFIG from "../../utilities/config.js";
 
 import PageMainCard from "../../frameworks/components/PageMainCard.js";
 import PDFRedIcon from "../../frameworks/components/icons//PDFRedIcon.js";
@@ -28,27 +31,32 @@ const Download = ({ title, fileSrc, isTop = false }) => {
 
 const DocumentationsApp = () => {
   return (
-    <PageMainCard
-      colorClass="bg-gradient-dark"
-      title="Documentations"
-      subTitle="Download"
-    >
-      <div className="p-3 p-lg-5 pt-0">
-        <Download
-          title="Solar Energy Potential"
-          fileSrc="/assets/pdf/solar-energy-potential-docs.pdf"
-          isTop={true}
-        />
-        <Download
-          title="PV-design off-grid SCC"
-          fileSrc="/assets/pdf/scc-docs.pdf"
-        />
-        <Download
-          title="Cable Sizing"
-          fileSrc="/assets/pdf/cable-sizing-docs.pdf"
-        />
-      </div>
-    </PageMainCard>
+    <>
+      <Helmet>
+        <title>Documentations | {CONFIG.APP_NAME}</title>
+      </Helmet>
+      <PageMainCard
+        colorClass="bg-gradient-dark"
+        title="Documentations"
+        subTitle="Download"
+      >
+        <div className="p-3 p-lg-5 pt-0">
+          <Download
+            title="Solar Energy Potential"
+            fileSrc="/assets/pdf/solar-energy-potential-docs.pdf"
+            isTop={true}
+          />
+          <Download
+            title="PV-design off-grid SCC"
+            fileSrc="/assets/pdf/scc-docs.pdf"
+          />
+          <Download
+            title="Cable Sizing"
+            fileSrc="/assets/pdf/cable-sizing-docs.pdf"
+          />
+        </div>
+      </PageMainCard>
+    </>
   );
 };
 

@@ -9,6 +9,8 @@ import TermsConditions from "./features/legalDocuments/TermsConditions.js";
 import Disclaimer from "./features/legalDocuments/Disclaimer.js";
 import PrivacyPolicies from "./features/legalDocuments/PrivacyPolicies.js";
 import SolarEnergyPotentialApp from "./features/solarEnergyPotential/SolarEnergyPotentialApp.js";
+import CableSizingApp from "./features/cableSizing/CableSizingApp.js";
+import PVDesignSccApp from "./features/pvDesignScc/PVDesignSccApp.js";
 
 const AppRouter = () => {
   return (
@@ -21,6 +23,14 @@ const AppRouter = () => {
           <Route
             path="solar-energy-potential"
             element={<SolarEnergyPotentialApp />}
+          />
+          <Route
+            path="scc"
+            element={<PVDesignSccApp />}
+          />
+          <Route
+            path="cable-sizing"
+            element={<CableSizingApp />}
           />
         </Route>
         <Route path="coming-soon">

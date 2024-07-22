@@ -9,6 +9,11 @@ body {
     }
 }
 
+iframe {
+    min-height: 768px;
+    width: 100%;
+}
+
 .text-main-yellow {
     color: $color-main-yellow;
 }

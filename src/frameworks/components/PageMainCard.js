@@ -8,7 +8,7 @@ const PageMainCard = ({ colorClass, title, subTitle, children }) => {
   return (
     <Container>
       <Row className="pt-5">
-        <Col md={10} lg={8} className="mx-auto pb-5">
+        <Col lg={10} className="mx-auto pb-5">
           <Card className="shadow-lg">
             <Card.Header
               className={colorClass + " p-3 p-lg-5 position-relative"}
