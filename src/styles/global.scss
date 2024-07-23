@@ -18,6 +18,13 @@ iframe {
     color: $color-main-yellow;
 }
 
+.flex-mid-center {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
 .captcha-container {
     display: block;
     margin-left: auto;
