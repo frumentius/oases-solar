@@ -35,7 +35,7 @@ const AppButton = ({ colorClass, title, body, link, icon }) => {
         <Link
           type="button"
           className={"btn btn-link-app p-0 mb-2 " + colorClass}
-          to="/app/solar-energy-potential"
+          to={link}
         >
           <AppButtonIcon icon={icon} />
         </Link>

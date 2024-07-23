@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 
+import * as CONFIG from "../../utilities/config.js";
+
 const Footer = () => {
   return (
     <footer className="mb-5 mb-md-0">
@@ -28,7 +30,7 @@ const Footer = () => {
                   Disclaimer
                 </Link>
               </p>
-              <p className="mb-4 text-sm">&#169;{new Date().getFullYear()} - Oases Solar</p>
+              <p className="mb-4 text-sm">&#169;{new Date().getFullYear() + " - " + CONFIG.APP_NAME}</p>
             </div>
           </Col>
         </Row>
