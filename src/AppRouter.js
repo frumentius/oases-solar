@@ -12,6 +12,9 @@ const ContactUsApp = lazy(() => import("./features/contactUs/ContactUsApp.js"));
 const FinancialAnalysisProApp = lazy(() =>
   import("./features/comingSoon/FinancialAnalysisProApp.js")
 );
+const CableSizingProApp = lazy(() =>
+  import("./features/comingSoon/CableSizingProApp.js")
+);
 const TermsConditions = lazy(() =>
   import("./features/legalDocuments/TermsConditions.js")
 );
@@ -53,6 +56,10 @@ const AppRouter = () => {
               <Route
                 path="financial-analysis-pro"
                 element={<FinancialAnalysisProApp />}
+              />
+              <Route
+                path="cable-sizing-pro"
+                element={<CableSizingProApp />}
               />
             </Route>
             <Route path="disclaimer" element={<Disclaimer />} />

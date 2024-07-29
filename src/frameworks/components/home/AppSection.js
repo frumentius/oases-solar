@@ -37,7 +37,7 @@ const AppSection = () => {
           <AppButton
               colorClass="bg-gradient-success"
               title="Cable Sizing"
-              body="Calculate cable dimension for DC, AC 1-Phase and AC 3-Phase."
+              body="Calculate cable dimension for DC solar cable."
               link="/app/cable-sizing"
               icon={faPenRuler}
             />

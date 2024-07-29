@@ -7,23 +7,7 @@ const ComingSoonCards = () => {
     <div className="mt-sm-n8 mt-n7">
       <Container>
         <Row className="justify-content-center row">
-          {/* <Col lg={4} className="mb-4 mb-lg-0">
-            <PackageCard
-              title="PV Design Off-Grid Pro"
-              subTitle="Coming Soon"
-              bodyText="For DC-coupled and AC-coupled PV system."
-              bodyList={[
-                "Save projects",
-                "Save solar panel technical data",
-                "Rough single line diagram",
-                "PDF report export",
-                "Technical support",
-              ]}
-              link="/coming-soon/pv-design-off-grid-pro"
-              linkText="Learn More"
-            />
-          </Col> */}
-          <Col lg={4}>
+          <Col lg={4} className="mb-4 mb-lg-0">
             <PackageCard
               title="Financial Analysis Pro"
               subTitle="Coming Soon"
@@ -34,6 +18,20 @@ const ComingSoonCards = () => {
                 "Technical support",
               ]}
               link="/coming-soon/financial-analysis-pro"
+              linkText="Learn More"
+            />
+          </Col>
+          <Col lg={4}>
+            <PackageCard
+              title="Cable Sizing Pro"
+              subTitle="Coming Soon"
+              bodyText="For multiple cables. Suitable for large scale projects."
+              bodyList={[
+                "Save projects",
+                "PDF report export",
+                "Technical support",
+              ]}
+              link="/coming-soon/cable-sizing-pro"
               linkText="Learn More"
             />
           </Col>
