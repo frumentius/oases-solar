@@ -164,7 +164,7 @@ const SolarEnergyPotentialForm = () => {
             <Row>
               <Col>
                 <Form.Group className="mb-4">
-                  <Form.Label>Altitude</Form.Label>
+                  <Form.Label>Altitude (Km)</Form.Label>
                   <Form.Control
                     aria-label="Altitude"
                     name="altitude"
