@@ -234,7 +234,7 @@ const SolarEnergyPotentialForm = () => {
                 </div>
               </Col>
             </Row>
-            <Row>
+            <Row className="mb-4">
               <Col className="text-center">
                 <Button
                   type="submit"
@@ -298,7 +298,7 @@ const ResultTables = ({
   calcResult,
 }) => {
   return (
-    <>
+    <Container className="pb-4">
       <dl className="row">
         <dt className="col-7 col-sm-4">Latitude:</dt>
         <dd className="col-5 col-sm-8">{latitude}</dd>
@@ -334,7 +334,7 @@ const ResultTables = ({
             max={calcResult.max_air_temp}
           />
         )}
-    </>
+    </Container>
   );
 };
 
